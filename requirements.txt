@@ -1,0 +1,38 @@
+# ─── Core RAG Stack ───────────────────────────────────────────────
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-core==0.3.19
+
+# ─── Vector Database ──────────────────────────────────────────────
+chromadb==0.5.18
+
+# ─── Embeddings (local, free) ─────────────────────────────────────
+sentence-transformers==3.3.1
+# Requires: torch (auto-installed via sentence-transformers)
+
+# ─── Document Loaders ─────────────────────────────────────────────
+pypdf==5.1.0              # PDF loading
+docx2txt==0.8             # DOCX loading  
+unstructured==0.16.10     # HTML, MD, and more
+python-magic==0.4.27      # File type detection
+
+# ─── Retrieval Enhancements ───────────────────────────────────────
+rank-bm25==0.2.2          # BM25 keyword search
+numpy==1.26.4             # Array ops for BM25
+
+# ─── API Server ───────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.17  # File uploads
+
+# ─── LLM Providers (install whichever you use) ────────────────────
+langchain-openai==0.2.9           # OpenAI GPT
+langchain-anthropic==0.3.0        # Claude
+langchain-google-genai==2.0.5     # Gemini
+langchain-ollama==0.2.1           # Ollama (local)
+langchain-groq==0.2.1             # Groq (fast inference)
+
+# ─── Utilities ────────────────────────────────────────────────────
+python-dotenv==1.0.1      # .env config
+pydantic==2.10.1          # Data validation
+tqdm==4.67.1              # Progress bars
